@@ -16,7 +16,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="dark"
 
-hi Normal       guibg=#000000   guifg=#CCCCCC
+hi Normal       ctermbg=16 ctermfg=253 guibg=#000000 guifg=#DDDDDD
 
 " OR
 
@@ -45,58 +45,59 @@ hi Normal       guibg=#000000   guifg=#CCCCCC
 
 "hi Cursor		
 "hi CursorIM	
-hi CursorLine       guibg=#222222
-hi ColorColumn      guibg=#111111
+hi CursorLine       ctermbg=235 cterm=NONE guibg=#222222 gui=NONE
+hi ColorColumn      ctermbg=233 guibg=#161616
 "hi Directory	
 "hi DiffAdd		
 "hi DiffChange	
 "hi DiffDelete	
 "hi DiffText	
 "hi ErrorMsg	
-"hi VertSplit	
+hi VertSplit        ctermbg=233 ctermfg=245 guibg=#111111 guifg=#777777
 "hi Folded		
 "hi FoldColumn	
 "hi IncSearch	
-hi LineNr           guibg=#111111   guifg=#777777
+hi LineNr           ctermbg=233 ctermfg=245 guibg=#111111 guifg=#777777
 "hi ModeMsg		
 "hi MoreMsg		
-hi NonText          guibg=#111111   guifg=#777777
+hi NonText          ctermbg=233 guibg=#111111   guifg=#777777
 "hi Question	
 "hi Search		
 "hi SpecialKey	
-"hi StatusLine	
-"hi StatusLineNC	
+hi StatusLine	    ctermbg=234 ctermfg=fg cterm=bold guibg=#222222 guifg=fg gui=bold
+hi StatusLineNC     ctermbg=234 ctermfg=fg cterm=NONE guibg=#222222 guifg=fg gui=NONE
 "hi Title		
-hi Visual           guibg=#303030
+hi Visual           ctermbg=240 guibg=#303030
 "hi VisualNOS	
 "hi WarningMsg	
 "hi WildMenu	
 "hi Menu		
 "hi Scrollbar	
 "hi Tooltip		
-
+" beige guifg=#ffddaa
+"
 " syntax highlighting groups
-hi Comment          guibg=bg        guifg=#998877   gui=italic
-hi Identifier       guibg=bg        guifg=fg        gui=bold
-hi Statement        guibg=bg        guifg=fg        gui=bold
-hi PreProc          guibg=bg        guifg=fg        gui=bold	
-hi Type             guibg=bg        guifg=fg
-hi Special          guibg=bg        guifg=fg
-hi Underlined       guibg=bg        guifg=fg
-hi Ignore           guibg=bg        guifg=fg
-hi Error            guibg=red       guifg=fg
-hi Todo             guibg=bg        guifg=#CA0020
+hi Comment     ctermbg=bg  ctermfg=137             guibg=bg  guifg=#aa8855 gui=italic
+hi Identifier  ctermbg=bg  ctermfg=fg   cterm=bold guibg=bg  guifg=fg      gui=bold
+hi Statement   ctermbg=bg  ctermfg=fg   cterm=bold guibg=bg  guifg=fg      gui=bold
+hi PreProc     ctermbg=bg  ctermfg=fg   cterm=bold guibg=bg  guifg=fg      gui=bold
+hi Type        ctermbg=bg  ctermfg=fg   cterm=bold guibg=bg  guifg=fg      gui=bold
+hi Special     ctermbg=bg  ctermfg=fg              guibg=bg  guifg=fg
+hi Underlined  ctermbg=bg  ctermfg=fg              guibg=bg  guifg=fg
+hi Ignore      ctermbg=bg  ctermfg=fg              guibg=bg  guifg=fg
+hi Error       ctermbg=red ctermfg=fg              guibg=red guifg=fg
+hi Todo        ctermbg=bg  ctermfg=red             guibg=bg  guifg=#CA0020
 
-hi Constant	        guibg=bg        guifg=#008080   gui=bold   
-hi String           guibg=bg        guifg=#008080   gui=italic
-hi Character        guibg=bg        guifg=#008080   gui=italic,bold
-hi Number           guibg=bg        guifg=#008080   gui=None
-hi Boolean          guibg=bg        guifg=#008080   gui=bold
-hi Float            guibg=bg        guifg=#008080   gui=None
+hi Constant	       ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=bold   
+hi String          ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=italic
+hi Character       ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=italic,bold
+hi Number          ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=None
+hi Boolean         ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=bold
+hi Float           ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=None
 
-hi SpecialChar      guibg=bg        guifg=#008080   gui=bold
-hi Tag              guibg=bg
-hi Delimiter        guibg=bg
-hi SpecialComment   guibg=bg
-hi Debug            guibg=bg
+hi SpecialChar     ctermbg=bg ctermfg=36 guibg=bg guifg=#008080 gui=bold
+hi Tag             ctermbg=bg            guibg=bg
+hi Delimiter       ctermbg=bg            guibg=bg
+hi SpecialComment  ctermbg=bg            guibg=bg
+hi Debug           ctermbg=bg            guibg=bg
 
